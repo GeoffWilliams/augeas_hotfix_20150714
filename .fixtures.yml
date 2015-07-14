@@ -1,0 +1,3 @@
+fixtures:
+  symlinks:
+    augeas_hotfix_20150714: "#{source_dir}"

@@ -1,0 +1,14 @@
+{
+  "name": "gw-augeas_hotfix_20150714",
+  "version": "0.1.0",
+  "author": "Geoff Williams <geoff.williams@puppetlabs.com>",
+  "summary": "hotfix to allow negated command aliases when using augeas to control sudoers",
+  "license": "Apache 2.0",
+  "source": "https://github.com/GeoffWilliams/augeas_hotfix_20150714",
+  "project_page": "https://github.com/GeoffWilliams/augeas_hotfix_20150714",
+  "issues_url": "https://github.com/GeoffWilliams/augeas_hotfix_20150714/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
