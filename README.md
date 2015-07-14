@@ -9,7 +9,8 @@ Created: 2015-07-14
 # Associated Jira/GH Tickets:
 * [Augeas sudoers lens does not allow negated command aliases](https://tickets.puppetlabs.com/browse/PE-10943)
 * [Sudoers lens doesn't suppot `!`](https://github.com/hercules-team/augeas/issues/262)
-#Link
+
+# Link
 * [Error: /Stage\[main\]/Sudo/Augeas\[includedirsudoers\]: Could not evaluate: Saving failed](https://puppetlabs.zendesk.com/agent/tickets/12693)
 
 # What the hotfix does
