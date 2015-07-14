@@ -1,5 +1,5 @@
 # augeas_hotfix_20150714
-
+[![Build Status](https://travis-ci.org/GeoffWilliams/augeas_hotfix_20150714.svg?branch=master)](https://travis-ci.org/GeoffWilliams/augeas_hotfix_20150714)
 ## Module Description
 
 Hotfix - Support for negated command alias in /etc/sudoers
