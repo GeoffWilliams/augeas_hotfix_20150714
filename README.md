@@ -1,4 +1,4 @@
-# augeas_hotfix_20150714
+# puppetlabs-augeas_sudoers_hotfix
 [![Build Status](https://travis-ci.org/GeoffWilliams/augeas_hotfix_20150714.svg?branch=master)](https://travis-ci.org/GeoffWilliams/augeas_hotfix_20150714)
 ## Module Description
 
@@ -26,7 +26,28 @@ Applying this patch to any versions but those listed above may have unexpected o
 This hotfix is platform independent
 
 #How to Apply
-Simply include this puppet module on nodes that requre the ability to parse negated command aliases in the `/etc/sudoers` file.  E.g.:
+First, on each puppet master:
+
+Install the module included in this hotfix on the master using the following command (adjust path to the module as needed): 
+```
+/opt/puppet/bin/puppet module install puppetlabs-augeas_sudoers_hotfix-0.1.0.tar.gz
+```
+Next, on the console:
+
+To apply the fix to specific nodes:
+
+1. Log into the console.
+2. Go to the Classification tab in the console.
+3. Set a value of 'augeas_sudoers_hotfix' for 'Node group name' and click 'Add group'.
+4. Click on the 'augeas_sudoers_hotfix' group link.
+5. On the Rules tab, in the 'Certname' box, select a host and click 'Pin node'. (Repeat for each host.)
+6. Select the Matching nodes tab and confirm the list of nodes is correct.
+7. Commit the change (link is to the bottom right of the screen).
+8. Click the Classes tab.
+9. On the Classes tab, select 'augeas_hotfix_20150714' and click 'Add class'.
+10. Commit the change (link is to the bottom right of the screen).
+
+Alternatively, simply include this puppet module on nodes that requre the ability to parse negated command aliases in the `/etc/sudoers` file.  E.g.:
 
 ```puppet
 include augeas_hotfix_20150714
