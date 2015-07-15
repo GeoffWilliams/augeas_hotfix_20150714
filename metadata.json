@@ -1,5 +1,5 @@
 {
-  "name": "gw-augeas_hotfix_20150714",
+  "name": "puppetlabs-augeas_sudoers_hotfix",
   "version": "0.1.0",
   "author": "Geoff Williams <geoff.williams@puppetlabs.com>",
   "summary": "hotfix to allow negated command aliases when using augeas to control sudoers",
